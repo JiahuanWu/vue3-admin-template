@@ -1,5 +1,10 @@
 <template>
-  <Menu />
+  <aside class="sidebar">
+    <Menu />
+  </aside>
+  <main class="content">
+    <router-view />
+  </main>
 </template>
 
 <script lang="ts">
@@ -20,5 +25,19 @@ export default defineComponent({
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #081C15;
+}
+.sidebar {
+  width: 20rem;
+  line-height: 2;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  border-right: 1px solid #eee;
+  box-shadow: 6px 0 4px -3px #eee;
+}
+.content {
+  padding-left: 20rem;
+  padding-bottom: 2rem;
 }
 </style>

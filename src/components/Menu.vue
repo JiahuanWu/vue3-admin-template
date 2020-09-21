@@ -47,7 +47,7 @@ export default defineComponent({
           children: [
             {
               name: 'Composition API',
-              href: '',
+              href: '/composition-api',
             },
           ],
         },
@@ -69,15 +69,7 @@ export default defineComponent({
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .nav {
-  width: 280px;
-  line-height: 2;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  padding-right: 15px;
-  border-right: 1px solid #eee;
-  box-shadow: 6px 0 4px -3px #eee;
+  padding-right: 1rem;
 }
 .nav-ul {
   list-style: none;
